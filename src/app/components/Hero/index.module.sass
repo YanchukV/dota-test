@@ -1,0 +1,83 @@
+$medium: 768px
+
+.root
+  height: 100vh
+  background-color: darkred
+  padding: 15px
+
+.wrapper
+  padding: 35px 15px 15px
+  background-color: white
+  min-height: 85vh
+
+.title
+  text-align: center
+  font-size: 60px
+  padding-bottom: 15px
+  @media (max-width: $medium)
+    font-size: 25px
+
+.image
+  padding-bottom: 15px
+  img
+    display: block
+    margin: 0 auto
+
+.head
+  display: flex
+  justify-content: space-around
+  padding: 30px 15px
+  @media (max-width: $medium)
+    flex-direction: column
+    padding: 15px 5px
+  &Col
+    display: flex
+    justify-content: center
+    padding: 0 5px
+    align-items: flex-end
+    @media (max-width: $medium)
+      justify-content: flex-start
+      align-items: flex-start
+  &Title
+    font-weight: bold
+    font-size: 20px
+    padding: 0 5px
+    @media (max-width: $medium)
+      font-size: 18px
+  &Info
+    font-weight: bold
+    font-size: 16px
+    line-height: 22px
+    padding: 0 5px
+    color: darkred
+    span
+      display: inline-block
+      padding: 0 3px
+
+.row
+  display: flex
+
+.col
+  display: flex
+  flex: 1 1 calc(100%/2)
+
+
+.table
+  background: green
+  padding: 15px
+  &Title
+    justify-content: flex-end
+    padding: 0 15px
+    color: white
+    font-weight: bold
+    font-size: 16px
+    @media (max-width: $medium)
+      justify-content: flex-start
+      padding-left: 0
+
+
+  &Info
+    color: #000
+    font-weight: bold
+    font-size: 16px
+

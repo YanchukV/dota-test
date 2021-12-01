@@ -1,0 +1,72 @@
+$medium: 768px
+
+.root
+  min-height: 100vh
+  background-color: darkred
+  padding: 15px
+  @media (max-width: $medium)
+    padding-top: 0
+
+.wrapper
+  padding: 35px 15px 15px
+  display: flex
+  background-color: green
+  min-height: 85vh
+  @media (max-width: $medium)
+    flex-direction: column
+    padding: 25px 5px 5px
+
+.title
+  text-align: center
+
+.col
+  display: flex
+  flex-direction: column
+  flex: 1 1 calc(100%/3)
+
+.content
+  display: flex
+  justify-content: center
+  align-content: flex-start
+  flex-wrap: wrap
+  flex: 1 1 calc(100%/3)
+  padding: 15px
+  @media (max-width: $medium)
+    padding: 5px
+
+
+.link
+  display: flex
+  justify-content: center
+  align-items: center
+  border-radius: 50%
+  height: 70px
+  width: 70px
+  margin: 5px
+  &:hover
+    .icon
+      height: 100px
+      width: 100px
+      transition: all .2s
+      z-index: 1
+      @media (max-width: $medium)
+        height: 60px
+        width: 60px
+  @media (max-width: $medium)
+    height: 50px
+    width: 50px
+
+.filtered
+  & > img
+    border: solid 4px red
+
+.icon
+  display: block
+  border-radius: 50%
+  height: 70px
+  width: 70px
+  object-fit: cover
+  transition: all .2s
+  @media (max-width: $medium)
+    height: 50px
+    width: 50px
