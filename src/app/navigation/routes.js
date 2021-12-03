@@ -1,13 +1,14 @@
-import { lazy } from 'react';
+import Hero from "../components/Hero";
+import Heroes from "../components/Heroes";
 
 const routes = {
   home: {
     path: '/',
-    component: lazy( () => import("../components/Heroes"))
+    component: Heroes
   },
   hero: {
     path: '/:heroname',
-    component: lazy( () => import("../components/Hero"))
+    component:  Hero
   }
 };
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import { createBrowserHistory } from 'history';
-import { Route, Router, Switch } from 'react-router-dom';
+import { Route, Router, Switch , HashRouter} from 'react-router-dom';
 import { Provider } from 'react-redux';
 
 import Styles from './index.module.sass';
